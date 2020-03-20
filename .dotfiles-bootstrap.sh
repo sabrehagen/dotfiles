@@ -56,7 +56,9 @@ zsh -c $HOME/.config/scripts/wal.sh
 code --install-extension Shan.code-settings-sync && \
   sed -i '/lastDownload/d' $HOME/.config/Code/User/syncLocalSettings.json && \
   code && sleep 90 && pkill -f code && \
-  code && sleep 5 && pkill -f code
+  code && sleep 5 && pkill -f code && \
+  vcsh dotfiles-code reset HEAD ~ && \
+  vcsh dotfiles-code co ~
 
 # Terminate x server
 pkill -f vncserver
