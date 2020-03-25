@@ -1,8 +1,7 @@
 # Clone large dotfiles and those that require post install
-vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-tmux.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-x11.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-zsh.git & \
-  wait
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-tmux.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-x11.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-zsh.git
 
 # Cache zsh plugins
 zsh -c "source $HOME/.zshrc" &
@@ -14,29 +13,28 @@ zsh -c $HOME/.tmux/plugins/tpm/bin/install_plugins &
 wait
 
 # Clone static dotfiles
-vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alsa.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-compton.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-crt.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-git.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-gtk.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-i3.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-jobber.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mime.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mpd.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-musikcube.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ncmpcpp.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pcmanfm.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pulseaudio.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ranger.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-scripts.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git & \
-  vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xdg.git & \
-  wait
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alsa.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-compton.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-crt.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-git.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-gtk.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-i3.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-jobber.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mime.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mpd.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-musikcube.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ncmpcpp.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pcmanfm.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pulseaudio.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ranger.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-scripts.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xdg.git
 
 # Ignore wal-generated gtk files
 vcsh dotfiles-gtk ls-files $HOME | \
