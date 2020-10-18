@@ -1,3 +1,12 @@
+# Install tmux plugin manager
+git clone --depth 1 https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm &
+
+# Install zsh plugin manager
+curl -fsSL git.io/antigen > /usr/local/bin/antigen.zsh &
+
+# Wait for plugin managers to install
+wait
+
 # Clone large dotfiles and those that require post install
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-tmux.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-x11.git &
