@@ -1,7 +1,9 @@
 # Install tmux plugin manager
+mkdir -p $HOME/.tmux/plugins/tpm &>/dev/null
 git clone --depth 1 https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm &
 
 # Install zsh plugin manager
+mkdir -p $HOME/.local/bin &>/dev/null
 curl -fsSL git.io/antigen > $HOME/.local/bin/antigen.zsh &
 
 # Wait for plugin managers to install
