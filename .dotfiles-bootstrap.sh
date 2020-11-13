@@ -31,7 +31,6 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alsa.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git &
-vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-compton.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-crt.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git &
@@ -44,6 +43,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mpd.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-musikcube.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ncmpcpp.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pcmanfm.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-picom.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pulseaudio.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ranger.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-scripts.git &
