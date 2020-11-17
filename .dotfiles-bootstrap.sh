@@ -67,14 +67,8 @@ vncserver $DISPLAY \
 # Install code settings sync extension, clear extension download history, start code so extensions install, forcibly terminate code after extensions install (race condition), generate wal cache
 code --install-extension Shan.code-settings-sync && \
   sed -i '/lastDownload/d' $HOME/.config/Code/User/syncLocalSettings.json && \
-  code && sleep 30 && pkill -f code && \
+  code && sleep 90 && pkill -f code && \
   code && sleep 5 && pkill -f code && \
-  vcsh dotfiles-code reset HEAD ~ && \
-  vcsh dotfiles-code co ~ && \
-  git clone https://github.com/Bluedrack28/vscode-wal.git ~/.vscode/extensions/vscode-wal && \
-  mkdir ~/.vscode/extensions/vscode-wal/themes && \
-  cp ~/.vscode/extensions/vscode-wal/templates/colors-vscode-theme.json ~/.config/wal/templates && \
-  ln -sf ~/.cache/wal/colors-vscode-theme.json ~/.vscode/extensions/vscode-wal/themes/vs-wal-color-theme.json && \
   ~/.config/scripts/wal.sh
 
 # Terminate x server and wait for shutdown
