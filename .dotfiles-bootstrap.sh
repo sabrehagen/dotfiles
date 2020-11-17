@@ -1,9 +1,9 @@
 # Install tmux plugin manager
-mkdir -p $HOME/.tmux/plugins/tpm &>/dev/null
+mkdir -p $HOME/.tmux/plugins/tpm >/dev/null 2>&1
 git clone --depth 1 https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm &
 
 # Install zsh plugin manager
-mkdir -p $HOME/.local/bin &>/dev/null
+mkdir -p $HOME/.local/bin >/dev/null 2>&1
 curl -fsSL git.io/antigen > $HOME/.local/bin/antigen.zsh &
 
 # Wait for plugin managers to install
@@ -67,7 +67,7 @@ vncserver $DISPLAY \
 # Install code settings sync extension, clear extension download history, start code so extensions install, forcibly terminate code after extensions install (race condition), generate wal cache
 code --install-extension Shan.code-settings-sync && \
   sed -i '/lastDownload/d' $HOME/.config/Code/User/syncLocalSettings.json && \
-  code && sleep 90 && pkill -f code && \
+  code && sleep 30 && pkill -f code && \
   code && sleep 5 && pkill -f code && \
   vcsh dotfiles-code reset HEAD ~ && \
   vcsh dotfiles-code co ~ && \
