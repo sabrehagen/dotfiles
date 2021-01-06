@@ -59,3 +59,16 @@ wait
 # Ignore wal-generated gtk files
 vcsh dotfiles-gtk ls-files $HOME | \
   xargs -n 1 vcsh dotfiles-gtk update-index --assume-unchanged
+
+# Start an x server for applications that require one to function (e.g. wal)
+export DISPLAY=:2
+vncserver $DISPLAY \
+  -autokill \
+  -SecurityTypes none \
+  -xstartup /usr/bin/i3
+
+# Create wal cache
+~/.config/scripts/wal.sh
+
+# Terminate x server
+vncserver -kill $DISPLAY
