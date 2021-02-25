@@ -9,8 +9,8 @@ curl -fsSL git.io/antigen > $HOME/.local/bin/antigen.zsh &
 # Wait for plugin managers to install
 wait
 
-# Fix bug where ~/.zshenv exists already
-rm ~/.zshenv
+# Fix bug where $HOME/.zshenv exists already
+rm $HOME/.zshenv
 
 # Clone large dotfiles and those that require post install
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-tmux.git &
@@ -68,7 +68,13 @@ vncserver $DISPLAY \
   -xstartup /usr/bin/i3
 
 # Create wal cache
-~/.config/scripts/wal.sh
+$HOME/.config/scripts/wal.sh
+
+# Install vscode extensions
+code --install-extension Shan.code-settings-sync && \
+   sed -i '/lastDownload/d' $HOME/.config/Code/User/syncLocalSettings.json && \
+   code && sleep 90 && pkill -f code && \
+   code && sleep 5 && pkill -f code
 
 # Terminate x server
 vncserver -kill $DISPLAY
