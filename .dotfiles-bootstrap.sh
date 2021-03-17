@@ -43,15 +43,18 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-jobber.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mime.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mpd.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-musikcube.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-nano.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ncmpcpp.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pcmanfm.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-picom.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pulseaudio.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-qutebrowser.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ranger.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-scripts.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-x11.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xdg.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-zathura.git &
 
 # Wait for dotfiles cloning to finish
 wait
