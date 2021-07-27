@@ -76,8 +76,8 @@ $HOME/.config/scripts/wal.sh
 # Install vscode extensions
 code --install-extension Shan.code-settings-sync && \
    sed -i '/lastDownload/d' $HOME/.config/Code/User/syncLocalSettings.json && \
-   code && sleep 30 && pkill -f code && \
-   code && sleep 5 && pkill -f code
+   code && xdotool windowactivate --sync $(xdotool search --sync --onlyvisible --name code) key "shift+alt+d" && \
+   sleep 30 && pkill -f code && code && sleep 5 && pkill -f code
 
 # Terminate x server
 vncserver -kill $DISPLAY
