@@ -77,7 +77,7 @@ $HOME/.config/scripts/wal.sh
 code --install-extension Shan.code-settings-sync && \
    sed -i '/lastDownload/d' $HOME/.config/Code/User/syncLocalSettings.json && \
    code --no-sandbox && xdotool search --sync --onlyvisible --class code windowfocus --sync %1 mousemove --window %1 0 0 key shift+alt+d && \
-   sleep 60 && pkill -f code && code --no-sandbox && sleep 5 && pkill -f code
+   sleep 120 && pkill -f code && code --no-sandbox && sleep 10 && pkill -f code
 
 # Terminate x server
 vncserver -kill $DISPLAY
