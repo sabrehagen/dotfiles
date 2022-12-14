@@ -39,6 +39,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-git.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-gtk.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-i3.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-jobber.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ksnip.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mime.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-nano.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-nativefier.git &
