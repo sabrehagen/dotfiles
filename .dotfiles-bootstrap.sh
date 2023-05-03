@@ -33,7 +33,6 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alsa.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git &
-vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-git.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-gtk.git &
@@ -69,13 +68,6 @@ vncserver $DISPLAY \
 
 # Create wal cache
 $HOME/.config/scripts/wal.sh
-
-# Install vscode extensions
-code --install-extension Shan.code-settings-sync && \
-   sed -i '/lastDownload/d' $HOME/.config/Code/User/syncLocalSettings.json && \
-   code --no-sandbox && xdotool search --sync --onlyvisible --class code windowfocus --sync %1 mousemove --window %1 0 0 key shift+alt+d && sleep 120 && pkill -f code && \
-   code --no-sandbox && sleep 10 && pkill -f code && \
-   code --no-sandbox && sleep 10 && pkill -f code
 
 # Terminate x server
 vncserver -kill $DISPLAY
