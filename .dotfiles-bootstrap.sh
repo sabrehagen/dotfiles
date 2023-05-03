@@ -33,6 +33,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alsa.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-git.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-gtk.git &
