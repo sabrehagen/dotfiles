@@ -30,8 +30,8 @@ wait
 
 # Clone static dotfiles
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
-vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alsa.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-btop.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git &
@@ -50,6 +50,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ranger.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-scripts.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-x11.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xava.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xdg.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-zathura.git &
 
