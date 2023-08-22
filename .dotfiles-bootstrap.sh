@@ -35,6 +35,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-btop.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-feh.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-git.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-gtk.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-i3.git &
