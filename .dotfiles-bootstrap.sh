@@ -32,6 +32,7 @@ wait
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-btop.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-cava.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git &
