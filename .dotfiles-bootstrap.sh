@@ -50,7 +50,6 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-picom.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pulseaudio.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ranger.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-scripts.git &
-vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-x11.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xava.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xdg.git &
