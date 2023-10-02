@@ -77,4 +77,4 @@ $HOME/.config/scripts/wal.sh
 vncserver -kill $DISPLAY
 
 # Handle arm versions of dotfiles
-~/.config/scripts/arm64-dotfiles.sh
+zsh -c $HOME/.config/scripts/arm64-dotfiles.sh
