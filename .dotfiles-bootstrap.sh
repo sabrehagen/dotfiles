@@ -75,3 +75,6 @@ $HOME/.config/scripts/wal.sh
 
 # Terminate x server
 vncserver -kill $DISPLAY
+
+# Handle arm versions of dotfiles
+~/.config/scripts/arm64-dotfiles.sh
