@@ -73,5 +73,11 @@ vncserver $DISPLAY \
 # Create wal cache
 $HOME/.config/scripts/wal.sh
 
+# Install vs code wal extension
+yarn --cwd /opt/vscode-wal install-extension
+
 # Terminate x server
 vncserver -kill $DISPLAY
+
+# Support arm versions of dotfiles
+$HOME/.config/scripts/arm64-dotfiles.sh
