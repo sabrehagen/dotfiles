@@ -60,6 +60,10 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-zathura.git &
 # Wait for dotfiles cloning to finish
 wait
 
+# Ignore pcmanfm changes
+vcsh dotfiles-pcmanfm ls-files $HOME | \
+  xargs -n 1 vcsh dotfiles-pcmanfm update-index --assume-unchanged
+
 # Ignore wal-generated gtk files
 vcsh dotfiles-gtk ls-files $HOME | \
   xargs -n 1 vcsh dotfiles-gtk update-index --assume-unchanged
