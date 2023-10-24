@@ -69,7 +69,8 @@ vcsh dotfiles-gtk ls-files $HOME | \
   xargs -n 1 vcsh dotfiles-gtk update-index --assume-unchanged
 
 # Start an x server for applications that require one to function (e.g. wal)
-vncserver \
+export DISPLAY=:2
+vncserver $DISPLAY \
   -autokill \
   -SecurityTypes none \
   -xstartup /usr/bin/i3
@@ -81,7 +82,7 @@ $HOME/.config/scripts/wal.sh
 yarn --cwd /opt/vscode-wal install-extension
 
 # Terminate x server
-vncserver -kill :*
+vncserver -kill $DISPLAY
 
 # Support arm versions of dotfiles
 $HOME/.config/scripts/arm64-dotfiles.sh
