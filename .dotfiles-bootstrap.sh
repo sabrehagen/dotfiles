@@ -9,8 +9,8 @@ curl -fsSL git.io/antigen > $HOME/.local/bin/antigen.zsh &
 # Wait for plugin managers to install
 wait
 
-# Fix bug where $HOME/.zshenv exists already
-rm $HOME/.zshenv
+# Fix bug where $HOME/.zshenv exists before zsh dotfiles have been cloned
+[ ! -f $HOME/.zshrc ] && rm $HOME/.zshenv
 
 # Clone large dotfiles and those that require post install
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-tmux.git &
