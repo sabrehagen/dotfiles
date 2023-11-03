@@ -40,6 +40,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-feh.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-git.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-gtk.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-htop.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-i3.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-jobber.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ksnip.git &
