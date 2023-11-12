@@ -3,14 +3,15 @@ mkdir -p $HOME/.tmux/plugins/tpm >/dev/null 2>&1
 git clone --depth 1 https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm &
 
 # Install zsh plugin manager
-mkdir -p $HOME/.local/bin >/dev/null 2>&1
-curl -fsSL git.io/antigen > $HOME/.local/bin/antigen.zsh &
+git clone https://github.com/jandamm/zgenom.git "${HOME}/.zgenom" &
 
 # Wait for plugin managers to install
 wait
 
 # Fix bug where $HOME/.zshenv exists before zsh dotfiles have been cloned
-[ ! -f $HOME/.zshrc ] && rm $HOME/.zshenv
+if [ ! -f $HOME/.zshrc ]; then
+  rm $HOME/.zshenv
+fi
 
 # Clone large dotfiles and those that require post install
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-tmux.git &
