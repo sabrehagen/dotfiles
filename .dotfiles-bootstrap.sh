@@ -1,5 +1,5 @@
-# Silence git warnings until .gitconfig exists
-export GIT_DEFAULT_BRANCH=master
+# Silence git clone warnings until $HOME/.gitconfig exists
+sudo git config --system init.defaultBranch master
 
 # Clone dotfiles
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
