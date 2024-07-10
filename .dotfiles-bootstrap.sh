@@ -1,3 +1,6 @@
+# Silence git warnings until .gitconfig exists
+export GIT_DEFAULT_BRANCH=master
+
 # Clone dotfiles
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git &
@@ -66,7 +69,7 @@ export DISPLAY=:2
 vncserver $DISPLAY \
   -autokill \
   -SecurityTypes none \
-  -xstartup /usr/bin/i3
+  -xstartup /usr/local/bin/i3
 
 # Create wal cache
 $HOME/.config/scripts/wal.sh
