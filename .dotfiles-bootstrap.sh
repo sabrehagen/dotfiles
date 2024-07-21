@@ -71,8 +71,10 @@ vncserver $DISPLAY \
   -SecurityTypes none \
   -xstartup /usr/local/bin/i3
 
-# Create wal cache
-$HOME/.config/scripts/wal.sh
+# Generate wal cache for all wallpapers
+find $HOME/.local/share/wallpapers |
+  grep -v bak | \
+  xargs -P0 $HOME/.config/scripts/wal.sh 2>/dev/null
 
 # Install vs code wal extension
 yarn --cwd /opt/vscode-wal install-extension
