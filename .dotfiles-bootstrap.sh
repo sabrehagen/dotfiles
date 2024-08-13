@@ -1,6 +1,9 @@
 # Silence git clone warnings until $HOME/.gitconfig exists
 sudo git config --system init.defaultBranch master
 
+# Clone ssh dotfiles first to enable ssh multiplexing
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git
+
 # Clone dotfiles
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git &
@@ -27,7 +30,6 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-picom.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pulseaudio.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ranger.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-scripts.git &
-vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-tmux.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-x11.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xava.git &
