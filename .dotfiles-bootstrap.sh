@@ -6,6 +6,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git
 
 # Clone dotfiles
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alsa.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-autorandr.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-bottom.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-btop.git &
