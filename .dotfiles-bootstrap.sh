@@ -60,6 +60,9 @@ zsh -c "source $HOME/.zshrc" &
 # Wait for zsh and tmux caching to finish
 wait
 
+# Install tmux plugin dependencies
+sudo apt-get install -qq python3-libtmux
+
 # Ignore pcmanfm changes
 vcsh dotfiles-pcmanfm ls-files $HOME | \
   xargs -n 1 vcsh dotfiles-pcmanfm update-index --assume-unchanged
@@ -85,6 +88,3 @@ yarn --cwd /opt/vscode-wal install-extension
 
 # Terminate x server
 vncserver -kill $DISPLAY
-
-# Support arm versions of dotfiles
-$HOME/.config/scripts/arm64-dotfiles.sh
