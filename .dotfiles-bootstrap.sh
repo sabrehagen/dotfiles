@@ -42,11 +42,10 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-zsh.git &
 wait
 
 # Install tmux plugin manager
-mkdir -p $HOME/.tmux/plugins/tpm >/dev/null 2>&1
 git clone --depth 1 https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm &
 
 # Install zsh plugin manager
-git clone https://github.com/jandamm/zgenom.git $HOME/.zgenom &
+git clone --depth 1 https://github.com/jandamm/zgenom.git $HOME/.zgenom &
 
 # Wait for plugin managers to install
 wait
