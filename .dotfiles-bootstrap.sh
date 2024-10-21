@@ -74,8 +74,7 @@ vcsh dotfiles-gtk ls-files $HOME | \
 export DISPLAY=:2
 vncserver $DISPLAY \
   -autokill \
-  -SecurityTypes none \
-  -xstartup /usr/local/bin/i3
+  -SecurityTypes none
 
 # Generate wal cache for all wallpapers
 find $HOME/.local/share/wallpapers |
