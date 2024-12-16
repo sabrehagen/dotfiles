@@ -72,7 +72,7 @@ vcsh dotfiles-gtk ls-files $HOME | \
 
 # Start an x server for applications that require one to function (e.g. wal)
 export DISPLAY=:2
-vncserver $DISPLAY \
+sudo vncserver $DISPLAY \
   -autokill \
   -SecurityTypes none
 
@@ -85,4 +85,4 @@ find $HOME/.local/share/wallpapers |
 yarn --cwd /opt/vscode-wal install-extension
 
 # Terminate x server
-vncserver -kill $DISPLAY
+sudo vncserver -kill $DISPLAY || true
