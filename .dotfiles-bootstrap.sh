@@ -41,26 +41,8 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-zsh.git &
 # Wait for dotfiles cloning to finish
 wait
 
-# Install tmux plugin manager
-git clone --depth 1 https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm &
-
-# Install zsh plugin manager
-git clone --depth 1 https://github.com/jandamm/zgenom.git $HOME/.zgenom &
-
-# Wait for plugin managers to install
-wait
-
-# Cache tmux plugins
-zsh -c $HOME/.tmux/plugins/tpm/bin/install_plugins &
-
 # Cache zsh plugins
-zsh -c "source $HOME/.zshrc" &
-
-# Wait for zsh and tmux caching to finish
-wait
-
-# Install tmux plugin dependencies
-sudo apt-get install -qq python3-libtmux
+zsh -c "source $HOME/.zshrc"
 
 # Ignore pcmanfm changes
 vcsh dotfiles-pcmanfm ls-files $HOME | \
