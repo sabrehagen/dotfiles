@@ -13,6 +13,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-btop.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-cava.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-chromium.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-code.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-cursor.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dnsmasq.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-dunst.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-feh.git &
