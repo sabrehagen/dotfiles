@@ -41,6 +41,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-qjackctl.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-qt5ct.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ranger.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-scripts.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-sgpt.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-tmux.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-x11.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-xava.git &
