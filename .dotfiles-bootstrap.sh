@@ -1,8 +1,12 @@
 # Silence git clone warnings until $HOME/.gitconfig exists
 sudo git config --system init.defaultBranch master
 
-# Clone ssh dotfiles first to enable ssh multiplexing
-vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git
+# Clone ssh dotfiles first to enable ssh multiplexing, and vcsh dotfiles for subsequent vcsh repo configuration
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ssh.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-vcsh.git &
+
+# Wait for bootstrap dotfiles to clone
+wait
 
 # Clone dotfiles
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-alacritty.git &
