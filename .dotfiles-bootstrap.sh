@@ -32,9 +32,12 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-jobber.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ksnip.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ly.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mime.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mpd.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mpv.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-musikcube.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-nano.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-nativefier.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ncmpcpp.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pcmanfm.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-picom.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pulseaudio.git &
