@@ -76,7 +76,7 @@ sudo vncserver $DISPLAY \
 # Generate wal cache for all wallpapers
 find $HOME/.local/share/wallpapers |
   grep -v bak | \
-  xargs -n 1 -P0 $HOME/.config/scripts/wal.sh 2>/dev/null
+  xargs -n 1 -P0 zsh $HOME/.config/scripts/wal.sh 2>/dev/null
 
 # Install vs code wal extension
 yarn --cwd /opt/vscode-wal install-extension
