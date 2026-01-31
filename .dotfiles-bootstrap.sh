@@ -69,9 +69,10 @@ vcsh dotfiles-gtk ls-files $HOME | \
 
 # Start an x server for applications that require one to function (e.g. wal)
 export DISPLAY=:2
-sudo vncserver $DISPLAY \
+vncserver $DISPLAY \
   -autokill \
-  -SecurityTypes none
+  -SecurityTypes none \
+  -- -extension GLX
 
 # Generate wal cache for all wallpapers
 find $HOME/.local/share/wallpapers |
@@ -82,4 +83,4 @@ find $HOME/.local/share/wallpapers |
 yarn --cwd /opt/vscode-wal install-extension
 
 # Terminate x server
-sudo vncserver -kill $DISPLAY || true
+vncserver -kill $DISPLAY || true
