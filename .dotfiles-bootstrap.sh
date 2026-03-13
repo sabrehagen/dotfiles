@@ -74,7 +74,6 @@ vncserver $DISPLAY \
 
 # Generate wal cache for all wallpapers
 find $HOME/.local/share/wallpapers |
-  grep -v bak | \
   xargs -n 1 -P0 $HOME/.local/bin/wal -e -n -s -t --saturate 0.3 -i 2>/dev/null
 
 # Install vs code wal extension
