@@ -36,6 +36,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-musikcube.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-nano.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-nativefier.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ncmpcpp.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ollama.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pcmanfm.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-picom.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-pulseaudio.git &
