@@ -32,6 +32,7 @@ vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-kde.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ksnip.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-less.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-ly.git &
+vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mise.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mpd.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-mpv.git &
 vcsh clone https://sabrehagen@github.com/sabrehagen/dotfiles-musikcube.git &
